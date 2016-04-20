@@ -1,0 +1,25 @@
+# Java-GUI-Layouts
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.JFrame;
+import java.awt.FlowLayout;
+
+
+public class JavaFlowLayout extends JFrame {
+	public JavaFlowLayout() {
+		JPanel panel = new JPanel();
+		panel.setLayout(new FlowLayout());
+		panel.add(new JTextField("Write something"));
+		panel.add(new JTextField("Write something"));
+		panel.add(new JTextField("Write something"));
+		panel.add(new JTextField("Write something"));
+		setSize(500,100);
+		setTitle("Java GUI");
+		add(panel);
+		setVisible(true);
+		}
+	public static void main(String[] args) {
+		new JavaFlowLayout();
+	}
+
+}
