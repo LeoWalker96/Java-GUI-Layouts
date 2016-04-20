@@ -1,0 +1,25 @@
+
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.JFrame;
+import java.awt.BorderLayout;
+
+
+public class JavaBorderLayout extends JFrame {
+	public JavaBorderLayout() {
+		JPanel panel = new JPanel();
+		panel.setLayout(new BorderLayout());
+		panel.add(new JTextField("Write something"), BorderLayout.NORTH);
+		panel.add(new JTextField("Write something"), BorderLayout.WEST);
+		panel.add(new JTextField("Write something"), BorderLayout.EAST);
+		panel.add(new JTextField("Write something"), BorderLayout.SOUTH);
+		setSize(350,100);
+		setTitle("Java GUI");
+		add(panel);
+		setVisible(true);
+		}
+	public static void main(String[] args) {
+		new JavaBorderLayout();
+	}
+
+}
