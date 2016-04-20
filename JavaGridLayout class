@@ -1,0 +1,25 @@
+# Java-GUI-Layouts
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.JFrame;
+import java.awt.GridLayout;
+
+
+public class JavaGridLayout extends JFrame {
+	public JavaGridLayout() {
+		JPanel panel = new JPanel();
+		panel.setLayout(new GridLayout(2,2));
+		panel.add(new JTextField("Write something"));
+		panel.add(new JTextField("Write something"));
+		panel.add(new JTextField("Write something"));
+		panel.add(new JTextField("Write something"));
+		setSize(500,100);
+		setTitle("Java GUI");
+		add(panel);
+		setVisible(true);
+		}
+	public static void main(String[] args) {
+		new JavaGridLayout();
+	}
+
+}
